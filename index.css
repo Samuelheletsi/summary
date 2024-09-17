@@ -1,0 +1,175 @@
+/* General body styling */
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f4fa;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    /* padding: 20px; */
+    
+}
+
+/* Inner content styling */
+.inner-container {
+    background-color: hsl(252, 100%, 67%);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.inner-container h1 {
+    margin-top: 0;
+}
+
+.inner-container .circle-box {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsl(234, 85%, 45%),hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px auto;
+    opacity: 1;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.inner-container .circle-box h3 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.inner-container .circle-box p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.inner-container .status {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.inner-container .description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Ratings section styling */
+.ratings {
+    margin: 20px;
+}
+
+.ratings button{
+    width: 90%;
+    padding: 12px;
+    border-radius: 20px;
+    background-color:  hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+}
+.ratings button:hover{
+    background-color:hsl(252, 100%, 67%) ;
+}
+
+
+.rate1 {
+    background-color: #f0f4fa;
+    border: 1px solid #d3dce6;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    color: hsl(166, 100%, 37%);
+}
+.rate1 .react{
+    color:hsl(0, 100%, 67%);
+}
+.rate1 .mem{
+    color: hsl(39, 100%, 56%);
+}
+.rate1 .verbal{
+    color: hsl(166, 100%, 37%);
+}
+.rate1 .vis{
+    color: hsl(234, 85%, 45%);
+}
+.rate1 div{
+    display: flex;
+    justify-items: space-between;
+}
+.rate1 img{
+    width: 20px;
+    height: 10x;
+    margin-right: 10px;
+}
+
+.rate1 span {
+    font-weight: bold;
+    background-color: #eee;
+    border-radius: 5px;
+    /* padding: 5px 10px; */
+    display: flex;
+    margin-top: 3px;
+    height: 20px;
+    
+   
+}
+span p{
+    font-weight: 700;
+    color: black;
+  
+    margin-top: 0;
+}
+
+.rate1:hover {
+    background-color: #d3dce6;
+    cursor: pointer;
+}
+
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 700px;
+        display: flex;
+    }
+
+    .inner-container,
+    .ratings {
+        flex: 1; /* Ensures both sides take up equal space */
+        margin-right: 15px; /* Adds some spacing between them */
+    }
+
+    .inner-container {
+        margin-right: 0; /* Remove the last right margin for even spacing */
+    }
+
+    .ratings h2 {
+        text-align: left;
+    }
+
+    .rate1 {
+        margin: 10px 0;
+    }
+}
+
