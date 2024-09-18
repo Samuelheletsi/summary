@@ -156,12 +156,12 @@ span p{
 
     .inner-container,
     .ratings {
-        flex: 1; /* Ensures both sides take up equal space */
-        margin-right: 15px; /* Adds some spacing between them */
+        flex: 1; 
+        margin-right: 15px; 
     }
 
     .inner-container {
-        margin-right: 0; /* Remove the last right margin for even spacing */
+        margin-right: 0; 
     }
 
     .ratings h2 {
